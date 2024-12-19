@@ -31,7 +31,7 @@ jobs:
       run: npm run build
 
     - name: Deploy
-      uses: aws-actions/configure-aws-credentials@4.0.2
+      uses: aws-actions/configure-aws-credentials@v4
       with:
         role-to-assume: arn:aws:iam::575108961682:role/MyGHARole
         role-session-name: DemoGitHubActions
